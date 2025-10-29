@@ -1,0 +1,126 @@
+.cart-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .cart-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #222;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .cart-item-details h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #111;
+  }
+  
+  .cart-item-details p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .cart-item-quantity {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .cart-item-remove {
+    background: none;
+    border: none;
+    color: #c00;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .cart-item-remove:hover {
+    color: #900;
+  }
+  
+  .cart-total {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  .cart-empty {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    padding: 50px 0;
+  }
+
+  .quantity-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 110px;
+  }
+  
+  .quantity-control .qty-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .quantity-control .qty-btn:hover {
+    background-color: #444;
+  }
+  
+  .quantity-control .quantity-input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    padding: 6px 0;
+    pointer-events: none; /* заборона прямого редагування */
+    background-color: #f9f9f9;
+  }
+  
