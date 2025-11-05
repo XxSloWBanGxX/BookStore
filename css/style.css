@@ -613,3 +613,80 @@ footer {
 .btn-small:hover {
   background-color: #555;
 }
+
+/* ===== Ліва навігація (сайдбар) — красиве оформлення ===== */
+.admin-layout{
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  gap:20px;
+  margin-top:20px;
+}
+
+.admin-sidebar{
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:14px;
+  position:sticky;
+  top:80px;            /* під висоту твоєї шапки */
+  height:fit-content;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+.sidebar-nav{ display:flex; flex-direction:column; gap:14px; }
+.sidebar-group{ display:flex; flex-direction:column; gap:6px; }
+
+.sidebar-group-title{
+  font-size:12px;
+  font-weight:800;
+  color:#666;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  padding:0 8px;
+  margin-bottom:4px;
+}
+
+.sidebar-link{
+  display:flex; align-items:center; gap:10px;
+  padding:10px 12px;
+  border-radius:10px;
+  color:#333; text-decoration:none;
+  border:1px solid transparent;
+  transition: background .2s ease, transform .05s ease, border-color .2s ease;
+}
+
+.sidebar-link .dot{
+  width:8px; height:8px; border-radius:50%;
+  background:#bbb; flex:0 0 8px;
+  transition: background .2s ease;
+}
+
+.sidebar-link:hover{
+  background:#f7f7f7;
+  border-color:#eee;
+}
+
+.sidebar-link.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+.sidebar-link.active .dot{
+  background:#fff;
+}
+
+/* Права колонка (контент) — щоб гармоніювало */
+.admin-content{
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* Адаптив */
+@media (max-width: 960px){
+  .admin-layout{ grid-template-columns: 1fr; }
+  .admin-sidebar{ position:static; }
+}
