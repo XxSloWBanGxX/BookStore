@@ -1,0 +1,62 @@
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .catalog-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .catalog-card:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+  
+  .catalog-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  
+  .catalog-card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 8px 0;
+    text-align: center;
+    color: #222;
+  }
+  
+  .catalog-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 4px 0;
+    text-align: center;
+  }
+  
+  .catalog-card .btn {
+    margin-top: auto;
+    padding: 8px 14px;
+    background-color: #fff;      /* білий фон */
+    color: #000;                 /* чорний текст */
+    border: 2px solid #000;      /* чорний обвід */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .catalog-card .btn:hover {
+    background-color: #000;      /* при наведенні чорний фон */
+    color: #fff;                 /* білий текст */
+  }
+
