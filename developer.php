@@ -11,7 +11,7 @@ if (!isset($_SESSION['username'])) {
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-<<<<<<< HEAD
+
   <title>Розробники</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -77,7 +77,7 @@ if (!isset($_SESSION['username'])) {
   }
 }
   </style>
-=======
+
   <title>Про розробника</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -115,13 +115,12 @@ if (!isset($_SESSION['username'])) {
   margin: 0 auto;
 }
 </style>
->>>>>>> bb325550c9229aaa4ba21cf919905c8fa94a2afb
 </head>
 <body>
 
 <?php include 'header.php'; ?>
 
-<<<<<<< HEAD
+
 <div class="page-container">
   <h1>Наші розробники</h1>
   <div class="developers-grid">
@@ -148,16 +147,8 @@ if (!isset($_SESSION['username'])) {
       </div>
     </div>
 
-=======
-<div class="developer-container">
-  <img src="img/your-photo.jpg" alt="Фото розробника" class="developer-photo" />
-  <div class="developer-name">Мосейчук Богдан</div>
-  <div class="developer-info">
-    <p>Привіт! Я — Мосейчук Богдан, розробник цього сайту. Ідея створити онлайн-магазин книг виникла через мою любов до літератури та бажання зробити процес вибору та покупки книг зручним і приємним для користувачів.</p>
-    <p>Цей проект реалізований за допомогою PHP, MySQL, HTML, CSS та JavaScript. Моя мета — створити простий і зрозумілий інтерфейс для любителів книг, де можна швидко знаходити цікаві видання і замовляти їх онлайн.</p>
-    <p>Дякую, що відвідали мій сайт!</p>
->>>>>>> bb325550c9229aaa4ba21cf919905c8fa94a2afb
-  </div>
+
+
 </div>
 
 </body>

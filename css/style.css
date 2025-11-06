@@ -613,8 +613,8 @@ footer {
 .btn-small:hover {
   background-color: #555;
 }
-<<<<<<< HEAD
-=======
+
+
 
 /* ===== Ліва навігація (сайдбар) — красиве оформлення ===== */
 .admin-layout{
@@ -692,4 +692,4 @@ footer {
   .admin-layout{ grid-template-columns: 1fr; }
   .admin-sidebar{ position:static; }
 }
->>>>>>> bb325550c9229aaa4ba21cf919905c8fa94a2afb
+

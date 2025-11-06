@@ -20,11 +20,7 @@ unset($_SESSION['cart'][$id]);
 // Оновлюємо загальну суму
 $host = 'localhost';
 $user = 'root';
-<<<<<<< HEAD
 $password = '';
-=======
-$password = 'smaik1322';
->>>>>>> bb325550c9229aaa4ba21cf919905c8fa94a2afb
 $dbname = 'shop';
 
 $conn = new mysqli($host, $user, $password, $dbname);
